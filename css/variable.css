@@ -1,0 +1,55 @@
+:root{
+    --font14:14px; --line16:16px;
+    --font16:16px; --line16:20px;
+    --font18:18px; --line18:23px;
+    --font20:20px; --line20:25px;
+    --font22:22px; --line22:24px;
+    --font34:34px
+  
+}
+@media screen and (max-width:1600px) {
+    :root{
+    --font60:45px;
+    --font26:21px;
+    --font34:30px;
+    }
+   
+}
+@media screen and (max-width:1400px) {
+    :root{
+        --font18:16px;
+        --font16:16px;
+        --font17:17px;
+        --font20:19px; --line20:21px;
+        --font22:15px; --line20:24px;
+        --font34:25px
+       
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    :root{
+        --font14:14px;--line16:16px;
+        --font16:13px;--line16:18px;
+        --font17:14px;--line17:20px;
+        --font18:15px;--line18:20px;
+        --font20:18px;--line20:20px;
+        --font22:20px;--line22:23px;
+        --font34:12px
+    
+    }
+    
+}
+@media screen and (max-width:425px) {
+    :root{
+        --font22:17px;
+        --font16:13px;--line16:18px;
+        --font17:14px;--line17:20px;
+        --font18:15px;--line18:20px;
+        --font20:18px;--line20:20px;
+        --font22:20px;--line22:23px;
+
+    }
+    
+}

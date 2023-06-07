@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <title>obidient</title>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    
+    <!-- main section -->
+    <div class="header">
+
+      <div class="dashboard-details">
+
+        <div class="dashboard-left d-flex align-items-center">
+          <div class="dashboard-logo ">
+            <img src="./assets/images/logo.png" alt="dashboard_logo">
+          </div>
+         <div class="menu-sec d-flex align-items-center">
+          <div class="menu-ico-g" id="mu">
+            <img src="./assets/images/mob-menu-icon.png" alt="mobile menu">
+          </div>
+          <div class="menu-ico-mobile"><img src="./assets/images/mob-menu-icon.png" alt="mobile menu"></div>
+          <h5 class="ms-1">Dashboard</h5>
+         </div>
+
+        </div>
+
+        <div class="nav_right">
+
+          <form class="navbar-form" role="search">
+            <div class="input-group add-on">
+              <input class="form-control" placeholder="Search..." name="srch-term" id="srch-term" type="text">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M19.3359 18.2109L14.7344 13.6094C15.875 12.2188 16.5625 10.4375 16.5625 8.49609C16.5625 4.04297 12.9492 0.429688 8.49609 0.429688C4.03906 0.429688 0.429688 4.04297 0.429688 8.49609C0.429688 12.9492 4.03906 16.5625 8.49609 16.5625C10.4375 16.5625 12.2148 15.8789 13.6055 14.7383L18.207 19.3359C18.5195 19.6484 19.0234 19.6484 19.3359 19.3359C19.6484 19.0273 19.6484 18.5195 19.3359 18.2109ZM8.49609 14.957C4.92969 14.957 2.03125 12.0586 2.03125 8.49609C2.03125 4.93359 4.92969 2.03125 8.49609 2.03125C12.0586 2.03125 14.9609 4.93359 14.9609 8.49609C14.9609 12.0586 12.0586 14.957 8.49609 14.957Z" fill="#515151"/>
+                  </svg></button>
+              </div>
+            </div>
+          </form>
+
+          <div class="profile_nav">
+            <div class="profile_nav_img">
+              <img src="./assets/images/profile.png">
+            </div>
+            <div class="profile-name">
+              <h5 class="">Lara Ariyo</h5>
+              <p class="m-0">Super Admin</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="page-content">
+     
+    <!-- nav section -->
+    <nav id="sidebar" class="sidebar-wrapper">
+      <!-- <div class="dashboard-logo ">
+        <img src="./assets/images/logo.png" alt="dashboard_logo">
+    </div>  -->
+    <div class="dashboard-list">
+      <ul class="categories">
+        <li class="submenu active ">
+          <a href="./Central-Dashboard.html">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_2_330)">
+                <path
+                  d="M-1.6652e-05 18.8182C-1.6652e-05 15.7273 -1.6652e-05 12.5909 -1.6652e-05 9.49999C-1.6652e-05 9.49999 0.0454379 9.49999 0.0454379 9.45454C0.36362 8.63636 0.77271 8.31818 1.63635 8.31818C3.59089 8.31818 5.59089 8.31818 7.54544 8.31818C8.54544 8.31818 9.13635 8.90909 9.13635 9.90909C9.13635 11.5909 9.13635 13.2727 9.13635 14.9545C9.13635 16.0909 9.13635 17.2727 9.13635 18.4091C9.13635 19.1364 8.72725 19.6818 8.09089 19.8636C7.99998 19.8636 7.95453 19.8636 7.86362 19.9091C5.59089 19.9091 3.36362 19.9091 1.09089 19.9091C1.09089 19.8636 1.04544 19.8636 1.04544 19.8636C0.499983 19.7273 0.136347 19.3636 -0.0454712 18.7727C0.0454379 18.8636 0.0454379 18.8182 -1.6652e-05 18.8182Z"
+                  fill="white" />
+                <path
+                  d="M12 0C14.2727 0 16.5 0 18.7727 0L18.8182 0.0454546C19.3636 0.136364 19.6818 0.454545 19.9091 0.909091C19.9545 1 20 1.09091 20 1.22727C20 4.31818 20 7.40909 20 10.5C19.9545 10.5 19.9545 10.5455 19.9545 10.5455C19.6818 11.3182 19.2273 11.6364 18.4091 11.6364C16.4091 11.6364 14.4091 11.6364 12.4091 11.6364C12.2273 11.6364 12.0909 11.6364 11.9091 11.5909C11.2273 11.4091 10.8182 10.8636 10.8182 10.1364C10.8182 8.72727 10.8182 7.31818 10.8182 5.95455C10.8182 4.5 10.8182 3 10.8182 1.54545C10.8182 0.818182 11.1818 0.318182 11.8636 0.0454546C11.9091 0.0454546 11.9545 0.0454546 12 0Z"
+                  fill="white" />
+                <path
+                  d="M7.90905 0C7.9545 0.0909091 8.04541 0.0454545 8.13632 0.0454545C8.72723 0.227273 9.13632 0.772727 9.18177 1.45455C9.18177 2.68182 9.18177 3.95454 9.18177 5.18182C9.18177 6 8.54541 6.63636 7.72723 6.63636C5.63632 6.63636 3.54541 6.63636 1.49996 6.63636C0.818137 6.63636 0.318137 6.22727 0.0908647 5.59091C0.0908647 5.54545 0.0908647 5.5 0.0454102 5.5C0.0454102 4.04545 0.0454102 2.59091 0.0454102 1.18182C0.0908647 1.13636 0.0908647 1.09091 0.136319 1C0.227228 0.590909 0.499956 0.272727 0.909046 0.136364C0.999955 0.0909091 1.09086 0.0454545 1.22723 0C3.4545 0 5.68177 0 7.90905 0Z"
+                  fill="white" />
+                <path
+                  d="M12 20C12 19.9546 11.9091 19.9546 11.9091 19.9546C11.2727 19.7273 10.8636 19.2273 10.8636 18.5455C10.8636 17.3182 10.8636 16.0455 10.8636 14.8182C10.8636 14 11.5 13.3636 12.3182 13.3636C14.4091 13.3636 16.5 13.3636 18.5455 13.3636C19.2727 13.3636 19.7727 13.8182 19.9546 14.5C19.9546 14.5455 19.9546 14.5455 20 14.5455C20 16 20 17.4091 20 18.8636C19.9546 18.9091 19.9546 18.9546 19.9091 19.0455C19.7727 19.4546 19.5 19.7727 19.0909 19.9546C19 20 18.8636 20.0455 18.7727 20.0455C16.5 20 14.2273 20 12 20Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_330">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg><span></span></a>
+        </li>
+
+        <li class="submenu">
+          <a href="./EventOverview.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M2.4 16.0457H0.891429C0.411429 16.0457 0 15.6343 0 15.1543V3.84H2.4V16.0457Z" fill="white" />
+              <path d="M23.04 15.9771H21.5314V3.77142H24V15.0857C24 15.5657 23.5886 15.9771 23.04 15.9771Z"
+                fill="white" />
+              <path
+                d="M12 3.77142H22.4915C22.6286 3.77142 22.7657 3.90857 22.7657 4.04571V15.0171C22.7657 15.7029 22.4229 15.9771 21.8057 15.9771C21.2572 15.9771 20.7772 15.9771 20.16 15.9771C20.0229 15.9771 19.8857 15.9771 19.8172 15.84C18.8572 14.88 17.2115 14.88 16.2515 15.84C16.1829 15.9086 16.0457 15.9771 15.9086 15.9771C15.5657 15.9771 15.1543 15.9771 14.8115 15.9771C14.6743 15.9771 14.6057 15.9771 14.6057 15.7714C14.5372 14.4686 13.44 13.44 12 13.44C10.6286 13.44 9.53146 14.4686 9.39431 15.7714C9.39431 15.9086 9.32574 15.9771 9.1886 15.9771C9.05146 15.9771 8.84574 15.9771 8.7086 15.9771C8.2286 15.9771 7.81717 15.9086 7.33717 15.6343C6.37717 14.88 4.93717 15.0171 4.11431 15.9086C4.04574 15.9771 3.9086 16.0457 3.77146 16.0457C3.22289 16.0457 2.67431 16.0457 2.05717 16.0457C1.57717 15.9771 1.23431 15.6343 1.23431 15.0857C1.23431 11.3829 1.23431 7.74857 1.23431 4.04571C1.23431 3.83999 1.30289 3.83999 1.5086 3.83999C4.93717 3.77142 8.50289 3.77142 12 3.77142ZM11.9315 5.07428C11.5886 5.07428 11.3829 5.21142 11.1772 5.48571C10.9029 5.82857 10.6972 6.24 10.4229 6.58285C10.3543 6.72 10.2857 6.78857 10.1486 6.78857C9.73717 6.85714 9.32574 6.99428 8.98289 7.13142C8.2286 7.33714 7.95431 8.16 8.43431 8.77714C8.64003 9.05142 8.91431 9.39428 9.1886 9.66857C9.32574 9.80571 9.32574 9.87428 9.32574 10.08C9.32574 10.4914 9.25717 10.9029 9.25717 11.3143C9.1886 12.0686 9.80574 12.5486 10.56 12.2743C11.04 12.1371 11.4515 11.9314 12 11.7943C12.0686 11.7257 12.2057 11.7257 12.2743 11.7943C12.6857 11.9314 13.1657 12.1371 13.7143 12.2743C14.4 12.48 15.0857 12.0686 15.0172 11.3829C15.0172 10.9714 15.0172 10.56 14.9486 10.1486C14.9486 10.0114 14.9486 9.87428 15.0857 9.80571C15.36 9.53142 15.5657 9.25714 15.7715 8.98285C16.32 8.29714 16.0457 7.54285 15.2229 7.33714C14.88 7.26857 14.4686 7.13142 14.1257 7.06285C13.9886 7.06285 13.8515 6.92571 13.7829 6.85714C13.5086 6.17142 13.2343 5.82857 13.0286 5.48571C12.5486 5.21142 12.2743 5.07428 11.9315 5.07428Z"
+                fill="white" />
+              <path
+                d="M12 2.94857C8.50285 2.94857 4.93714 2.94857 1.44 2.94857C1.23428 2.94857 1.16571 2.88 1.16571 2.67429C1.16571 2.46857 1.16571 2.26286 1.16571 2.12571C1.16571 1.64571 1.50857 1.30286 2.05714 1.30286C2.53714 1.30286 3.01714 1.30286 3.63428 1.30286C3.77143 1.30286 3.84 1.23429 3.84 1.09714C3.84 0.891429 3.84 0.685714 3.84 0.48C3.77142 0.137143 3.97714 0 4.18285 0C4.38857 0 4.59428 0.137143 4.59428 0.411429C4.59428 0.617143 4.59428 0.822857 4.59428 1.02857C4.59428 1.16571 4.59428 1.23429 4.8 1.23429C5.69142 1.23429 6.58285 1.23429 7.47428 1.23429C7.61142 1.23429 7.68 1.23429 7.68 1.02857C7.68 0.822857 7.68 0.617143 7.68 0.411429C7.61142 0.205714 7.81714 0 8.02285 0C8.29714 0 8.43428 0.137143 8.43428 0.411429C8.43428 0.617143 8.43428 0.822857 8.43428 1.09714C8.43428 1.23429 8.43428 1.23429 8.57142 1.23429C9.46285 1.23429 10.4229 1.23429 11.3143 1.23429C11.4514 1.23429 11.4514 1.16571 11.4514 1.09714C11.4514 0.891429 11.4514 0.685714 11.4514 0.411429C11.5886 0.137143 11.7257 0 12 0C12.2743 0 12.4114 0.137143 12.4114 0.48C12.4114 0.685714 12.4114 0.891429 12.4114 1.09714C12.4114 1.23429 12.4114 1.23429 12.5486 1.23429C13.44 1.23429 14.4 1.23429 15.2229 1.23429C15.36 1.23429 15.36 1.16571 15.36 1.09714C15.36 0.891429 15.36 0.685714 15.36 0.48C15.36 0.205714 15.5657 0 15.7714 0C16.0457 0 16.1829 0.205714 16.1829 0.48C16.1829 0.685714 16.1829 0.891429 16.1829 1.09714C16.1829 1.23429 16.2514 1.23429 16.32 1.23429C17.2114 1.23429 18.1714 1.23429 19.0629 1.23429C19.2 1.23429 19.2 1.16571 19.2 1.09714C19.2 0.891429 19.2 0.685714 19.2 0.411429C19.3371 0.205714 19.4743 0 19.7486 0C20.0229 0 20.16 0.205714 20.16 0.48C20.16 0.685714 20.16 0.891429 20.16 1.02857C20.16 1.23429 20.16 1.30286 20.3657 1.30286H21.8057C22.2857 1.30286 22.6971 1.71429 22.6971 2.19429V2.81143C22.6971 2.94857 22.6971 2.94857 22.56 2.94857C22.4914 2.94857 22.4229 2.94857 22.3543 2.94857C18.9943 2.94857 15.4286 2.94857 12 2.94857Z"
+                fill="white" />
+              <path
+                d="M11.9314 24C11.04 24 10.08 24 9.12001 24C8.9143 24 8.9143 23.9314 8.9143 23.7943C8.9143 22.9029 8.84573 22.0114 8.98287 21.12C9.12001 19.7486 10.3543 18.6514 11.7257 18.5143C13.2343 18.4457 14.5372 19.3371 14.88 20.7086C14.9486 20.9829 14.9486 21.2571 14.9486 21.5314C14.9486 22.2857 14.9486 23.04 14.9486 23.7943C14.9486 24 14.88 24 14.7429 24C13.8514 24 12.8914 24 11.9314 24Z"
+                fill="white" />
+              <path
+                d="M5.41712 24C4.66283 24 3.83997 24 3.08569 24C2.8114 24 2.8114 23.9314 2.8114 23.7257C2.8114 23.2457 2.8114 22.8343 2.94854 22.3543C3.49712 20.2286 6.23997 19.4743 7.88569 20.9829C7.95426 21.0514 8.02283 21.12 8.02283 21.3257C8.02283 21.8743 7.95426 22.4914 7.95426 23.04C8.0914 24 8.0914 24 7.81712 24C7.06283 24 6.23997 24 5.41712 24Z"
+                fill="white" />
+              <path
+                d="M18.5143 24H16.1829C16.0457 24 15.9086 23.8628 15.9086 23.7257V21.2571C15.9086 21.12 15.9771 21.0514 16.0457 20.9828C16.8686 20.2286 17.9657 20.0228 18.9943 20.3657C20.0914 20.7086 20.7771 21.4628 21.0514 22.56C21.12 22.9714 21.12 23.4514 21.12 23.8628C21.12 24 20.9829 24 20.9143 24C20.0229 24 19.2686 24 18.5143 24Z"
+                fill="white" />
+              <path
+                d="M18.0343 15.9771C18.9257 15.9771 19.7485 16.7314 19.8171 17.6229C19.8171 18.5829 19.0628 19.3371 18.0343 19.3371C17.1428 19.3371 16.32 18.5829 16.2514 17.6914C16.32 16.7314 17.0743 15.9771 18.0343 15.9771Z"
+                fill="white" />
+              <path
+                d="M6.10283 15.9771C6.65141 16.0457 7.19998 16.3886 7.47426 16.8686C8.15998 18.1029 7.13141 19.4057 5.82855 19.3371C5.27998 19.2686 4.73141 18.9257 4.45712 18.4457C3.70283 17.2114 4.73141 15.9086 6.10283 15.9771Z"
+                fill="white" />
+              <path
+                d="M12 14.3314C12.96 14.3314 13.7143 15.0857 13.7143 15.9771C13.7143 16.7314 13.2343 17.4171 12.48 17.6229C11.3143 17.9657 10.1485 17.0057 10.2171 15.84C10.3543 15.0171 11.1085 14.3314 12 14.3314Z"
+                fill="white" />
+              <path
+                d="M13.8514 11.3829C13.3714 11.2457 12.8914 11.04 12.3428 10.8343C12.0685 10.7657 11.8628 10.7657 11.5885 10.8343C11.1771 11.04 10.6971 11.1771 10.1485 11.3143C10.0114 11.3829 9.94283 11.3143 9.94283 11.1771C9.94283 10.6971 10.0114 10.2171 10.0114 9.66857C10.0114 9.46285 9.94283 9.32571 9.87426 9.18857C9.59997 8.84571 9.32569 8.50285 9.0514 8.22857C8.84569 7.95428 8.84569 7.88571 9.18854 7.81714C9.59997 7.67999 10.08 7.61142 10.56 7.47428C10.7657 7.40571 10.8343 7.33714 10.9714 7.19999C11.2457 6.78857 11.52 6.37714 11.7943 5.96571C11.9314 5.75999 12 5.82857 12.0685 5.96571C12.3428 6.37714 12.6171 6.78857 12.8914 7.19999C12.96 7.33714 13.0971 7.40571 13.3028 7.47428C13.7828 7.61142 14.1943 7.67999 14.7428 7.81714C15.0171 7.88571 15.0171 7.95428 14.88 8.15999C14.6057 8.50285 14.3314 8.84571 14.0571 9.18857C13.92 9.32571 13.92 9.46285 13.92 9.66857C13.8514 10.2857 13.8514 10.8343 13.8514 11.3829Z"
+                fill="white" />
+              <path d="M24 2.94857H21.12V1.30286H23.2457C23.6571 1.30286 24 1.64571 24 2.05714V2.94857Z"
+                fill="white" />
+              <path d="M2.05714 1.30286H0.96C0.411428 1.30286 0 1.71428 0 2.26286V2.94857H2.05714V1.30286Z"
+                fill="white" />
+            </svg>
+            </span>
+          </a>
+        </li>
+
+        <li class="submenu" id="admin">
+          <a href="./Admin console (user management _ invite new user).html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+              <g clip-path="url(#clip0_2_375)">
+                <path
+                  d="M17.9657 1.44H16.6629C16.6629 1.71429 16.6629 1.98857 16.6629 2.26286C16.6629 3.36 15.7714 4.25143 14.6743 4.25143H5.82857C4.73143 4.25143 3.84 3.36 3.84 2.26286C3.84 1.98857 3.84 1.71429 3.84 1.44H2.53714C1.16571 1.44 0 2.53715 0 3.97715V21.4629C0 22.8343 1.16571 24 2.53714 24H17.9657C19.4057 24 20.5029 22.8343 20.5029 21.4629V3.97715C20.5029 2.53715 19.3371 1.44 17.9657 1.44ZM14.9486 10.0114C14.88 10.2857 14.6743 10.4914 14.4686 10.6286L9.32572 15.7714C9.12 15.9771 8.91429 16.0457 8.70857 15.9771C8.57143 15.9771 8.43429 15.9086 8.29714 15.7714C7.40571 14.9486 6.58286 14.0571 5.69143 13.1657C5.41714 12.8914 5.41714 12.48 5.69143 12.2057C5.96571 11.9314 6.37714 11.9314 6.65143 12.2057C7.26857 12.8229 7.88571 13.44 8.57143 14.1257C8.70857 14.2629 8.84571 14.2629 8.98286 14.1257C10.56 12.5486 12.1371 10.9714 13.7143 9.39429C13.9886 9.12 14.3314 9.05143 14.6743 9.32572C14.8114 9.39429 14.88 9.53143 14.9486 9.73715V10.0114Z"
+                  fill="white" />
+                <path
+                  d="M5.89713 2.81143C8.63999 2.81143 11.3828 2.81143 14.1943 2.81143C14.5371 2.81143 14.7428 2.60571 14.7428 2.26286C14.7428 1.71429 14.7428 1.16571 14.7428 0.617143C14.7428 0.342857 14.6743 0.137143 14.4 0C11.52 0 8.57142 0 5.69142 0C5.4857 0.137143 5.34856 0.274286 5.41713 0.548571C5.41713 1.16571 5.41713 1.71429 5.41713 2.33143C5.41713 2.60571 5.55427 2.81143 5.89713 2.81143Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_375">
+                  <rect width="20.5029" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span></span>
+          </a>
+        </li>
+
+        <li class="submenu">
+          <a href="./payment_donation_states.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15.4286 0C17.6914 0 20.0229 0 22.2857 0C23.04 0 23.7257 0.685714 23.9314 1.71429C24.1371 2.74286 23.8629 3.77143 23.2457 4.38857C22.9714 4.66286 22.6971 4.8 22.2857 4.8C17.6914 4.8 13.0971 4.8 8.43429 4.8C7.54286 4.8 6.78857 3.70286 6.78857 2.4C6.78857 1.09714 7.54286 0 8.50286 0C10.8343 0 13.0971 0 15.4286 0Z"
+                fill="white" />
+              <path
+                d="M15.4285 9.60001C17.6914 9.60001 20.0228 9.60001 22.2857 9.60001C23.04 9.60001 23.7257 10.2857 23.9314 11.3143C24.1371 12.3429 23.8628 13.3714 23.2457 13.9886C22.9714 14.2629 22.6285 14.4 22.2857 14.4C17.6914 14.4 13.0971 14.4 8.43426 14.4C7.47426 14.4 6.71997 13.3029 6.71997 12C6.71997 10.6971 7.47426 9.60001 8.43426 9.60001C10.8343 9.60001 13.0971 9.60001 15.4285 9.60001Z"
+                fill="white" />
+              <path
+                d="M15.36 24C13.0971 24 10.8343 24 8.50283 24C7.47426 24 6.71997 22.9029 6.71997 21.5314C6.71997 20.2286 7.47426 19.2 8.36568 19.1314C9.11997 19.1314 9.87426 19.1314 10.6285 19.1314C14.4685 19.1314 18.3085 19.1314 22.1485 19.1314C23.1085 19.1314 23.9314 20.16 23.9314 21.4629C23.9314 22.8343 23.1771 23.9314 22.2171 23.9314C20.0914 23.9314 17.8971 23.9314 15.7714 23.9314C15.7028 24 15.5657 24 15.36 24Z"
+                fill="white" />
+              <path
+                d="M0 2.4C0 1.02857 1.09714 0 2.46857 0C3.77143 0 4.86857 1.09714 4.8 2.46857C4.8 3.77143 3.70286 4.86857 2.4 4.8C1.09714 4.8 0 3.70286 0 2.4Z"
+                fill="white" />
+              <path
+                d="M4.8 12C4.8 13.3714 3.70286 14.4 2.4 14.4C1.09714 14.4 0 13.3029 0 12C0 10.6286 1.09714 9.60001 2.4 9.60001C3.77143 9.60001 4.8 10.6971 4.8 12Z"
+                fill="white" />
+              <path
+                d="M4.8 21.6C4.8 22.9029 3.77143 24 2.4 24C1.09714 24 0 22.9029 0 21.6C0 20.2286 1.09714 19.2 2.4 19.2C3.70286 19.1314 4.8 20.2286 4.8 21.6Z"
+                fill="white" />
+            </svg>
+            <span></span>
+          </a>
+        </li>
+
+        <li class="submenu">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_2_416)">
+                <path
+                  d="M4.73981 9.04C5.49216 9.52 6.31975 10.08 7.0721 10.56C8.65204 11.6 10.1567 12.56 11.7367 13.6C11.8119 13.68 11.8871 13.68 11.9624 13.76C11.8871 13.84 11.8119 13.92 11.7367 14C10.3072 15.2 8.95298 16.48 7.52351 17.68C7.0721 18.08 6.77116 18.16 6.24451 17.76C4.2884 16.4 2.33229 15.04 0.30094 13.68C0.225705 13.6 0.0752351 13.52 0 13.36C0 13.28 0 13.2 0 13.12C0.15047 12.96 0.30094 12.8 0.526646 12.64C1.12853 12.16 1.73041 11.6 2.33229 11.12C3.15987 10.48 3.91223 9.76 4.73981 9.12C4.73981 9.04 4.73981 9.04 4.73981 9.04Z"
+                  fill="white" />
+                <path
+                  d="M4.73981 9.04001H4.66458C4.66458 8.96001 4.58934 8.88001 4.51411 8.88001C3.0094 7.60001 1.5047 6.32001 0 4.96001C0 4.88001 0 4.80001 0 4.72001C0.0752351 4.56001 0.225705 4.48001 0.376176 4.40001C2.40752 3.04001 4.36364 1.60001 6.39498 0.240006C6.77116 -0.0799944 7.14734 -0.0799944 7.52351 0.320006C8.95298 1.60001 10.3824 2.88001 11.8119 4.16001C11.8871 4.24001 11.8871 4.32001 12.0376 4.32001C11.9624 4.32001 11.8871 4.40001 11.8119 4.40001C9.47962 5.92001 7.22257 7.44001 4.89028 8.88001C4.89028 8.96001 4.73981 8.96001 4.73981 9.04001Z"
+                  fill="white" />
+                <path
+                  d="M4.81502 17.76C5.34167 18.16 5.86831 18.48 6.39496 18.88C6.84637 19.2 7.14731 19.2 7.59872 18.8C9.02819 17.52 10.4577 16.24 11.8871 14.96C12.0376 14.88 12.1128 14.8 12.1881 14.96C13.6175 16.24 15.1222 17.52 16.5517 18.8C16.9279 19.12 17.2288 19.12 17.6802 18.88C18.2069 18.56 18.7335 18.16 19.2602 17.76C19.2602 18.24 19.3354 18.72 19.1849 19.12C19.1097 19.44 18.9592 19.68 18.6583 19.84C16.4765 21.2 14.2946 22.64 12.1128 24C12.0376 24.08 11.9624 24.08 11.8119 24C9.63007 22.64 7.44825 21.2 5.26643 19.84C4.89026 19.6 4.66455 19.2 4.66455 18.8C4.81502 18.4 4.81502 18.08 4.81502 17.76Z"
+                  fill="white" />
+                <path
+                  d="M19.3354 9.04C20.3135 9.84 21.2163 10.64 22.1944 11.44C22.721 11.84 23.2477 12.32 23.7743 12.8C24.1505 13.12 24.1505 13.36 23.6991 13.68C21.6677 15.04 19.7116 16.48 17.6803 17.84C17.3041 18.16 16.9279 18.08 16.5517 17.76C15.1975 16.56 13.9185 15.44 12.5643 14.24C12.1881 13.92 12.2633 13.68 12.5643 13.44C14.7461 12 17.0031 10.56 19.185 9.04C19.185 9.04 19.185 9.04 19.2602 9.04C19.2602 9.04 19.2602 9.04 19.3354 9.04Z"
+                  fill="white" />
+                <path
+                  d="M19.3354 9.04H19.2602C19.2602 8.88 19.185 8.88 19.1097 8.88C16.8527 7.36 14.5956 5.92 12.3386 4.4C12.2633 4.32 12.1881 4.32 12.1129 4.24C12.8652 3.6 13.6176 2.96 14.2947 2.24C15.047 1.6 15.7994 0.960004 16.5517 0.240004C17.0031 -0.159996 17.3041 -0.159996 17.7555 0.160004C19.7868 1.52 21.7429 2.96 23.7743 4.32C24.2257 4.64 24.2257 4.88 23.8495 5.2C22.4201 6.4 20.9906 7.6 19.6364 8.8C19.4107 8.96 19.3354 8.96 19.3354 9.04Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_416">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>
+              <span></span>
+          </a>
+        </li>
+
+        <li class="submenu">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_2_450)">
+                <path d="M14.3039 5.71429H5.30615V14.712H14.3039V5.71429Z" fill="white" />
+                <path d="M18.3674 9.63265H9.36963V18.6304H18.3674V9.63265Z" fill="white" />
+                <path
+                  d="M22.6122 22.9388H1.06122V1.38775H22.6122V22.9388ZM1.71428 22.2857H21.8775V2.04082H1.71428V22.2857Z"
+                  fill="white" />
+                <path
+                  d="M22.8572 23.1837H0.816345V1.14286H22.8572V23.1837ZM1.22451 22.7755H22.3674V1.55102H1.22451V22.7755ZM22.1225 22.449H1.55104V1.87755H22.1225V22.449ZM1.9592 22.0408H21.7143V2.28571H1.9592V22.0408Z"
+                  fill="white" />
+                <path
+                  d="M1.38776 2.77551C2.15419 2.77551 2.77551 2.15419 2.77551 1.38776C2.77551 0.621319 2.15419 0 1.38776 0C0.621319 0 0 0.621319 0 1.38776C0 2.15419 0.621319 2.77551 1.38776 2.77551Z"
+                  fill="white" />
+                <path
+                  d="M1.38776 24C2.15419 24 2.77551 23.3787 2.77551 22.6122C2.77551 21.8458 2.15419 21.2245 1.38776 21.2245C0.621319 21.2245 0 21.8458 0 22.6122C0 23.3787 0.621319 24 1.38776 24Z"
+                  fill="white" />
+                <path
+                  d="M22.449 24C23.2154 24 23.8367 23.3787 23.8367 22.6122C23.8367 21.8458 23.2154 21.2245 22.449 21.2245C21.6825 21.2245 21.0612 21.8458 21.0612 22.6122C21.0612 23.3787 21.6825 24 22.449 24Z"
+                  fill="white" />
+                <path
+                  d="M22.449 2.77551C23.2154 2.77551 23.8367 2.15419 23.8367 1.38776C23.8367 0.621319 23.2154 0 22.449 0C21.6825 0 21.0612 0.621319 21.0612 1.38776C21.0612 2.15419 21.6825 2.77551 22.449 2.77551Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_450">
+                  <rect width="23.8367" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span></span>
+          </a>
+
+        </li>
+
+        <li class="submenu">
+          <a href="#"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"
+              fill="none">
+              <g clip-path="url(#clip0_2_473)">
+                <path
+                  d="M0.274299 24C1.31819e-05 23.7943 -0.0685582 23.6571 0.0685846 23.3143C1.50858 19.8857 2.94858 16.4571 4.38858 13.0286C4.38858 12.96 4.45716 12.8914 4.45716 12.8229C4.38858 12.8229 4.32001 12.8229 4.25144 12.8229C3.01716 12.8229 1.78287 12.8229 0.480013 12.8229C1.32024e-05 12.8229 -0.13713 12.5486 0.0685846 12.1371C2.05716 8.16 4.04573 4.25143 5.96573 0.342857C6.10287 0.0685714 6.24001 0 6.5143 0C8.57144 0 10.56 0 12.6172 0C12.8229 0 13.0286 0 13.0972 0.205714C13.2343 0.411429 13.0972 0.548571 13.0286 0.754286C11.52 3.08571 10.08 5.41714 8.57144 7.74857C8.50287 7.81714 8.50287 7.88571 8.4343 8.02286C8.57144 8.02286 8.64001 8.02286 8.70858 8.02286C10.1486 8.02286 11.5886 8.02286 13.0286 8.02286C13.1657 8.02286 13.3029 8.02286 13.44 8.09143C13.6457 8.22857 13.6457 8.50286 13.44 8.70857C12.8914 9.32571 12.3429 10.0114 11.7943 10.6286C8.22859 14.9486 4.5943 19.2686 0.891442 23.5886C0.82287 23.7257 0.685728 23.8629 0.548585 24C0.411442 24 0.34287 24 0.274299 24Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_473">
+                  <rect width="13.5771" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span></span>
+          </a>
+
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </nav>
+  <!-- <div class="mega-menu">
+    <ul class="admin-console-menu">
+     <li><span class="admin-items">Manage</span></li>
+     <li><span class="admin-items">Manage</span></li>
+     <li><span class="admin-items">Manage</span></li>
+     <li><span class="admin-items">Manage</span></li>
+     <li><span class="admin-items">Manage</span></li>
+     <li><span class="admin-items">Manage</span></li>
+
+    </ul>
+
+   </div> -->
+  <!-- main-page -->
+  <div class="right-page">
+  <div class="inner-section">
+    <section class="filter-section">
+      <h1 class="filter-title">Filter</h1>
+      
+      
+      <div class="filter-inner-section">
+        <div class="select">
+          <div class="selectBtn" data-type="firstOption">Select State</div>
+          <div class="selectDropdown">
+            <div class="option" data-type="firstOption">Abia</div>
+            <div class="option" data-type="secondOption">Adamawa</div>
+            <div class="option" data-type="thirdOption">Akwa Ibom</div>
+            <div class="option" data-type="thirdOption">Anambra</div>
+            <div class="option" data-type="thirdOption">Bauchi</div>
+          </div>
+        </div>
+        <div class="select">
+          <div class="selectBtn" data-type="firstOption">Select LGA </div>
+          <div class="selectDropdown">
+            <div class="option" data-type="firstOption">First option</div>
+            <div class="option" data-type="secondOption">Second option</div>
+            <div class="option" data-type="thirdOption">Third option</div>
+            <div class="option" data-type="forthOption">Forth option</div>
+            <div class="option" data-type="fifthOption">Fifth option</div>
+            <div class="option" data-type="sixthOption">Sixth option</div>
+          </div>
+        </div>
+        <div class="select">
+          <div class="selectBtn" data-type="firstOption">Select Ward</div>
+          <div class="selectDropdown">
+            <div class="option" data-type="firstOption">First option</div>
+            <div class="option" data-type="secondOption">Second option</div>
+            <div class="option" data-type="thirdOption">Third option</div>
+          </div>
+        </div>
+        <div class="select">
+          <div class="selectBtn" data-type="firstOption">Select Polling Unit</div>
+          <div class="selectDropdown">
+            <div class="option" data-type="firstOption">First option</div>
+            <div class="option" data-type="secondOption">Second option</div>
+            <div class="option" data-type="thirdOption">Third option</div>
+          </div>
+        </div>
+      
+      <div class="apply-btn"><a  href="./central-dashboard-2.html" class="btn">Apply</a></div>
+      <div class="refresh-btn"><a class="btn">Refresh</a></div>
+      </div>
+      
+    </section>
+    <section class="bar-chart-group">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 bar-chart-group-top">
+          <div class="chart-card-header">
+         <div class="chart-card-left">
+          <div class="chart-card-left-top"> <h1 class="card-inner-iterm">1,098,772</h1></div>
+          <div class="chart-card-left-top-bottom think"><h1 class="card-inner-iterm">Total Membership</h1></div>
+         </div>
+           <div class="chart-card-right"><img src="./assets/images/membership.png" alt="membership-icon"></div>
+            
+
+          </div>
+          <div class="bar-chart-header">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 bar-chart-group-top">
+          <div class="chart-card-header donation">
+         <div class="chart-card-left">
+          <div class="chart-card-left-top"> <h1 class="card-inner-iterm">$1,201,355:50</h1>
+            <h1 class="card-inner-iterm">£96,000:00</h1>
+            <h1 class="card-inner-iterm">€101,727:00</h1>
+          </div>
+          <div class="chart-card-left-top-bottom think"><h1 class="card-inner-iterm">Total Donation</h1></div>
+         </div>
+           <div class="chart-card-right"><img src="./assets/images/donation.png" alt="membership-icon"></div>
+            
+
+          </div>
+          <div class="bar-chart-header">
+            <canvas id="myChart-two" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 bar-chart-group-top">
+          <div class="chart-card-header revenue">
+         <div class="chart-card-left">
+          <div class="chart-card-left-top"> <h1 class="card-inner-iterm">N77,000:00</h1>
+            <h1 class="card-inner-iterm">$3,200</h1>
+            <h1 class="card-inner-iterm">£00:00</h1>
+            <h1 class="card-inner-iterm">€400:00</h1>
+            </div>
+          <div class="chart-card-left-top-bottom"><h1 class="card-inner-iterm">Total Advert Revenue</h1></div>
+         </div>
+           <div class="chart-card-right"><img src="./assets/images/reveue.png" alt="membership-icon"></div>
+            
+
+          </div>
+          <div class="bar-chart-header">
+            <canvas id="myChart-three" width="400" height="400"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 bar-chart-group-top">
+          <div class="chart-card-header events">
+         <div class="chart-card-left">
+          <div class="chart-card-left-top"> <h1 class="card-inner-iterm">Completed - 49,875</h1><h1 class="card-inner-iterm">Upcoming - 155,912</h1></div>
+
+          <div class="chart-card-left-top-bottom"><h1 class="card-inner-iterm">Total Campaign Events</h1></div>
+         </div>
+           <div class="chart-card-right"><img src="./assets/images/events.png" alt="membership-icon"></div>
+            
+
+          </div>
+          <div class="bar-chart-header">
+            <canvas id="myChart-four" width="400" height="400"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  </div>
+       
+    </main>
+    
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    // borchart 
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Growth YTD', 'This Week', 'Last Week'],
+        datasets: [{
+            trendlineLinear: {
+                style: "rgb(43 ,66 ,255, 0.3)",
+                lineStyle: "dotted|solid",
+                width: 2
+            },
+  
+            label: '# of Votes',
+            data: [1400000, 800000, 500000],
+            backgroundColor: [
+                '#C059BF',
+                '#D69AD5',
+                '#F4CDF4'
+            ],
+            
+            borderWidth: 1
+        },
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                suggestedMin: 300000,
+                suggestedMax: 1500000
+            }
+        }
+        
+    }
+});
+// chart two 
+const ctx_two = document.getElementById('myChart-two').getContext('2d');
+const myChart_two = new Chart(ctx_two, {
+    type: 'bar',
+    data: {
+        labels: ['Naira', 'US Doller', 'Pound','Euro'],
+        datasets: [{
+            trendlineLinear: {
+                style: "rgb(43 ,66 ,255, 0.3)",
+                lineStyle: "dotted|solid",
+                width: 2
+            },
+  
+            label: '# of Votes',
+            data: [1400000, 800000, 500000,600000],
+            backgroundColor: [
+                '#53C29A',
+                '#87D4B8',
+                '#BAE7D7',
+                '#DDF3EB'
+            ],
+            
+            borderWidth: 1
+        },
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                suggestedMin: 300000,
+                suggestedMax: 1500000
+            }
+        }
+        
+    }
+});
+// chart three 
+const ctx_three = document.getElementById('myChart-three').getContext('2d');
+const myChart_three = new Chart(ctx_three, {
+    type: 'bar',
+    data: {
+        labels: ['Naira', 'US Doller', 'Pound','Euro'],
+        datasets: [{
+            trendlineLinear: {
+                style: "rgb(43 ,66 ,255, 0.3)",
+                lineStyle: "dotted|solid",
+                width: 2
+            },
+  
+            label: '# of Votes',
+            data: [1400000, 800000, 500000,600000],
+            backgroundColor: [
+                '#FF1600',
+                '#FF5C4D',
+                '#FF8B80',
+                '#FFD0CC'
+            ],
+            
+            borderWidth: 1
+        },
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                suggestedMin: 300000,
+                suggestedMax: 1500000
+            }
+        }
+        
+    }
+});
+// chart fore 
+const ctx_four = document.getElementById('myChart-four').getContext('2d');
+const myChart_four = new Chart(ctx_four, {
+    type: 'bar',
+    data: {
+        labels: ['Completed Events', 'Upcoming Events', 'Waiting for Approval'],
+        datasets: [{
+            trendlineLinear: {
+                style: "rgb(43 ,66 ,255, 0.3)",
+                lineStyle: "dotted|solid",
+                width: 2
+            },
+  
+            label: '# of Votes',
+            data: [1400000, 800000, 500000],
+            backgroundColor: [
+                '#5295DC',
+                '#97BFEA',
+                '#CBDFF5'
+            ],
+            
+            borderWidth: 1
+        },
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                suggestedMin: 300000,
+                suggestedMax: 1500000
+            }
+        }
+        
+    }
+});
+
+
+
+const ctx_five = document.getElementById('myChart-five').getContext('2d');
+const myChart_five = new Chart(ctx_five, {
+    type: 'bar',
+    data: {
+        labels: ['Completed Events', 'Upcoming Events', 'Waiting for Approval'],
+        datasets: [{
+            trendlineLinear: {
+                style: "rgb(43 ,66 ,255, 0.3)",
+                lineStyle: "dotted|solid",
+                width: 2
+            },
+  
+            label: '# of Votes',
+            data: [130, 40, 0],
+            backgroundColor: [
+                '#5295DC',
+                '#97BFEA',
+                '#CBDFF5'
+            ],
+            
+            borderWidth: 1
+        },
+    ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                suggestedMin: 0,
+                suggestedMax: 250
+            }
+        }
+        
+    }
+});
+
+
+  </script>
+  
+
+</body>
+</html>
